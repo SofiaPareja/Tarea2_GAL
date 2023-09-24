@@ -26,7 +26,6 @@ def mostrar_img(image, titulo):
     cv2.imshow(titulo,image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
-    # Guardar la imagen recortada en la ruta indicada
         
 
 def image_to_matrix(image):
