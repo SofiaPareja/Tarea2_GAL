@@ -154,14 +154,14 @@ tamano = matriz_gray1.shape
 
 identidad = np.eye(tamano[0])
 w = np.fliplr(identidad)
-
+print("esta es la matriz w: " + str(w))
 print("Parte 9")
-multi = matriz_gray1 * w 
+multi = np.dot(matriz_gray1, w)
 print("La matriz de la imagen 1 multiplicada por la matriz antidiagonal: ")
 print(multi)
 print("\n")
-multi2 = w * matriz_gray1
-print("La matriz de la imagen 2 multiplicada por la matriz antidiagonal: ")
+multi2 = np.dot(w, matriz_gray1)
+print("La matriz de la antidiagonal por la matriz de la imagen 1: ")
 print(multi2)
 print("\n")
 
