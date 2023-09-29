@@ -131,8 +131,18 @@ if (es_invertible(matriz_gray2)):
 
 
 #Parte 8
+multi = matriz_gray1 * 0.5
+multi = np.clip(multi,0, 255)
+mostrar_img(multi, " contraste 0.5")
+print("\n")
+print("Parte 8")
+print("La matriz de la imagen 1 multiplicada por un escalar 0.5:")
+print(multi)
+print("\n")
+
 multi = matriz_gray1 * 3
 multi = np.clip(multi,0, 255)
+mostrar_img(multi, " contraste 3")
 print("\n")
 print("Parte 8")
 print("La matriz de la imagen 1 multiplicada por un escalar 3:")
